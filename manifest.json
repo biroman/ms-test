@@ -3,7 +3,7 @@
   "name": "My Extension",
   "version": "1.0",
   "permissions": ["activeTab"],
-  "update_url": "https://github.com/biroman/ms-test/blob/main/updates.xml"
+  "update_url": "https://github.com/biroman/ms-test/blob/main/updates.xml",
   "content_scripts": [
     {
       "matches": ["https://mafiaspillet.no/ms.php"],
