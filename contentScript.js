@@ -190,18 +190,17 @@ function runExtension() {
     lastNotificationTimestamp = currentTime;
   }, checkInterval);
 
-  fetch(WHITELIST_URL + "?_=" + Date.now())
-    .then((response) => response.text())
-    .then((text) => {
-      const authorizedUsers = text.split(/\r?\n/);
+  sendMessageToBackground("fetchWhitelist", WHITELIST_URL + "?_=" + Date.now(), (response) => {
+    const text = response.text;
+    const authorizedUsers = text.split(/\r?\n/);
 
-      if (authorizedUsers.includes(playerName)) {
-        observer.observe(targetNode, { childList: true, subtree: true });
-        console.log("Du vil nå dele drapforsøk med Discord!");
-      } else {
-        alert("Du er ikke godkjent til å bruke denne ;)");
-      }
-    });
+    if (authorizedUsers.includes(playerName)) {
+      observer.observe(targetNode, { childList: true, subtree: true });
+      console.log("Du vil nå dele drapforsøk med Discord!");
+    } else {
+      alert("Du er ikke godkjent til å bruke denne ;)");
+    }
+  });
 }
 
 showModal();
