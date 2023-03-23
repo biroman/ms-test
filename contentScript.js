@@ -21,14 +21,14 @@ function showModal() {
   text.innerText = "Aktivere discord meldinger?";
   text.style.cssText = "font-size: 16px; font-weight: bold; margin-bottom: 10px; color: white;";
 
-  yesButton.innerText = "Ja";
+  yesButton.innerText = "Jau";
   yesButton.style.cssText = "background-color: #4b4b4b; color: white; padding: 8px 16px; font-size: 14px; border-radius: 6px; margin: 5px; cursor: pointer; border: none; transition: background-color 0.3s, transform 0.1s;";
   yesButton.addEventListener("mouseover", () => (yesButton.style.backgroundColor = "#6b6b6b"));
   yesButton.addEventListener("mouseout", () => (yesButton.style.backgroundColor = "#4b4b4b"));
   yesButton.addEventListener("mousedown", () => (yesButton.style.transform = "scale(0.95)"));
   yesButton.addEventListener("mouseup", () => (yesButton.style.transform = "scale(1)"));
 
-  noButton.innerText = "Nei";
+  noButton.innerText = "Neiu";
   noButton.style.cssText = "background-color: #4b4b4b; color: white; padding: 8px 16px; font-size: 14px; border-radius: 6px; margin: 5px; cursor: pointer; border: none; transition: background-color 0.3s, transform 0.1s;";
   noButton.addEventListener("mouseover", () => (noButton.style.backgroundColor = "#6b6b6b"));
   noButton.addEventListener("mouseout", () => (noButton.style.backgroundColor = "#4b4b4b"));
