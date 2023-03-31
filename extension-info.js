@@ -55,7 +55,7 @@ function showModal() {
 function runExtension() {
   //autentikasjon med github
 
-  const WEBHOOK_URL = "https://discord.com/api/webhooks/1088277430776627220/aD4OJbVtBFUKLtGxuK-PDa1kmFV896w0IkwwqxvptPemAOAZdSql-_6cWTJKsr_Xsd9l";
+  const WEBHOOK_URL = "https://discord.com/api/webhooks/1091382779415121940/UZEIfpMNP-pCkVZZSy27jL3OPneaZEQY8jTgV1BYpUTByaumEzJNwD-rSDflK5wKnlg-";
   const WHITELIST_URL = "https://raw.githubusercontent.com/biroman/discord/main/dsc.txt";
 
   const playerName = document.querySelector("#game-container > header > div > div.header-info-column.header-info-column1 > p.header-item.header-item-username > a > span").innerText;
